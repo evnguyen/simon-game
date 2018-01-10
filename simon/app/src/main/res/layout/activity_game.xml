@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/game_layout"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/grey">
+
+    <TextView
+        android:id="@+id/result_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"/>
+
+    <GridLayout
+        android:id="@+id/gridlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alignmentMode="alignBounds">
+    </GridLayout>
+
+    <Button
+        android:id="@+id/begin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/teal"
+        android:text="Begin round"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/diffculty_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/score_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_gravity="end"
+            android:textSize="15sp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.edwardnguyen.a4.SettingsActivity"
+    android:background="@color/grey">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textSize="32sp"
+        android:text="Settings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/num"
+        android:layout_width="150dp"
+        android:layout_height="17dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="8dp"
+        android:text="Number of buttons"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.259" />
+
+    <Spinner
+        android:id="@+id/spinner_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:prompt="@string/number_of_buttons_prompt"
+        android:spinnerMode="dropdown"
+        android:popupBackground="@color/teal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/num"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.248" />
+
+    <TextView
+        android:id="@+id/difficulty"
+        android:layout_width="150dp"
+        android:layout_height="17dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="8dp"
+        android:text="Select difficulty"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/num" />
+
+    <Spinner
+        android:id="@+id/spinner_difficulty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:prompt="@string/number_of_buttons_prompt"
+        android:spinnerMode="dropdown"
+        android:popupBackground="@color/teal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/difficulty"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_buttons"
+        app:layout_constraintVertical_bias="0.487" />
+
+    <Button
+        android:id="@+id/apply_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/teal"
+        android:padding="10dp"
+        android:text="Apply Settings"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

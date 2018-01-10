@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">A4</string>
+    <string name="instructions">
+        Instructions:\n\n
+            1)The Computer will highlight buttons in a sequence\n
+            2)Your job is the replicate that same sequence \n
+            3)If your sequence does not match the Computer's then you lose!\n
+    </string>
+
+    <string name="number_of_buttons_prompt">Choose how many buttons</string>
+    <string-array name="number_of_buttons">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+</resources>
